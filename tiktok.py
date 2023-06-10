@@ -29,7 +29,7 @@ def tiktokdl(m):
     if m.text.startswith(('https://www.tiktok.com', 'http://www.tiktok.com', 'https://vm.tiktok.com', 'https://vt.tiktok.com')):
         try:
             send = bot.reply_to(m, 'Processing...')
-            url = requests.get(f'https://api.douyin.wtf/api?url={m.text}').json()
+            url = requests.get(f'https://api.zahwazein.xyz/downloader/tiktok?apikey=zenzkey_1fb6d1325155&url={m.text}').json()
             video = url.get('nwm_video_url', None)
             audio = url.get('video_music_url', None)
             videotitle = url['video_title']
